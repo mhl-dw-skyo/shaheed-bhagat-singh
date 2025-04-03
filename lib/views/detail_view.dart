@@ -67,8 +67,7 @@ class DetailView extends GetView<DetailController> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  commonService.selectedFileType.value == "V" &&
-                          commonService.inMuseum.value
+                  commonService.selectedFileType.value == "V"
                       ? Container(
                           width: Get.width,
                           height: Get.height * 0.45,
@@ -113,14 +112,12 @@ class DetailView extends GetView<DetailController> {
                         ),
                   SizedBox(
                     height: commonService.selectedFileType.value == "A" &&
-                            commonService.selectedAudioFile.value.isNotEmpty &&
-                            commonService.inMuseum.value
+                            commonService.selectedAudioFile.value.isNotEmpty
                         ? 25
                         : 0,
                   ),
                   commonService.selectedFileType.value == "A" &&
-                          commonService.selectedAudioFile.value.isNotEmpty &&
-                          commonService.inMuseum.value
+                          commonService.selectedAudioFile.value.isNotEmpty
                       ? Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -189,9 +186,7 @@ class DetailView extends GetView<DetailController> {
                         ).pSymmetric(h: 25)
                       : const SizedBox(height: 0),
                   SizedBox(
-                    height: commonService.selectedAudioFile.value.isNotEmpty
-                        ? 20
-                        : 0,
+                    height:  16,
                   ),
                   commonService
                       .locationDetailData.value.attributes.locationName.text
@@ -205,7 +200,7 @@ class DetailView extends GetView<DetailController> {
                       .make()
                       .pSymmetric(h: 20),
                   const SizedBox(
-                    height: 10,
+                    height: 8,
                   ),
                   commonService.locationDetailData.value.attributes.description
                           .isNotEmpty

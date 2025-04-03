@@ -32,80 +32,13 @@ class DetailController extends GetxController {
 
   void openPlayer(String file, int beaconId) async {
     if (file.isNotEmpty) {
-      if (beaconId > 10) {
-        String folderName = "english";
-        if (GetStorage().read('language_id') != '' ||
-            GetStorage().read('language_id') != null) {
-          switch (GetStorage().read('language_id')) {
-            case 1:
-              folderName = "english";
-              break;
-            case 2:
-              folderName = "hindi";
-              break;
-            case 3:
-              folderName = "punjabi";
-              break;
-          }
-        }
-        Directory? appDocDir;
-        if (Platform.isAndroid) {
-          appDocDir = await getExternalStorageDirectory();
-        } else {
-          appDocDir = await getApplicationDocumentsDirectory();
-        }
-        String fileName = file.split('/').last;
-        String outputDirectory = '${appDocDir?.path}/$folderName';
-        if (!File("$outputDirectory/$fileName").existsSync() && commonService.inMuseum.value) {
-          await commonService.assetsAudioPlayer.value.open(
-            Audio.network(
-              file,
-            ),
-            showNotification: false,
-            autoStart: true,
-          );
-        } else {
-          await commonService.assetsAudioPlayer.value.open(
-            Audio.file(
-              "$outputDirectory/$fileName",
-            ),
-            showNotification: false,
-            autoStart: false,
-          );
-        }
-      } else {
-        await commonService.assetsAudioPlayer.value.open(
-          Audio(
-            Helper.localAssetPath(file),
-          ),
-          showNotification: true,
-          autoStart: false,
-        );
-      }
-      switch (commonService.selectedBeacon.value.action) {
-        case '1':
-        case '5':
-          if (commonService.inMuseum.value) {
-            print("Entering");
-
-            AssetsAudioPlayer.allPlayers().forEach((key, value) {
-              value.stop();
-            });
-            commonService.assetsAudioPlayer.value.play();
-            commonService.isAudioPlaying.value = false;
-            commonService.isAudioPlaying.refresh();
-            int selectedLocationIndex = commonService.sameCategoryBeacons
-                .indexWhere((element) =>
-                    element.locationId ==
-                    commonService.selectedBeacon.value.locationId);
-            if (selectedLocationIndex > -1) {
-              itemScrollController.scrollTo(
-                  index: selectedLocationIndex,
-                  duration: const Duration(milliseconds: 200));
-            }
-          }
-          break;
-      }
+      await commonService.assetsAudioPlayer.value.open(
+        Audio.network(
+          file,
+        ),
+        showNotification: false,
+        autoStart: true,
+      );
       commonService.assetsAudioPlayer.value.playlistAudioFinished
           .listen((Playing playing) {
         commonService.isAudioPlaying.value = false;

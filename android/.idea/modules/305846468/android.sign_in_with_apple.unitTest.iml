@@ -12,7 +12,7 @@
       </configuration>
     </facet>
     <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
-      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false" pureKotlinSourceFolders="$USER_HOME$/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/debugUnitTest/kotlin;/Users/manishkumar/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/debugAndroidTest/kotlin;/Users/manishkumar/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/debug/java;/Users/manishkumar/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/debug/kotlin">
+      <configuration version="5" platform="JVM 17" allPlatforms="JVM [17]" useProjectSettings="false">
         <additionalVisibleModuleNames>:sign_in_with_apple:main</additionalVisibleModuleNames>
         <compilerSettings />
         <compilerArguments>
@@ -23,7 +23,7 @@
           </flagArguments>
           <stringArguments>
             <stringArg name="destination" arg="$MODULE_DIR$/../../../../build/sign_in_with_apple/tmp/kotlin-classes/debugUnitTest" />
-            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="jvmTarget" arg="17" />
             <stringArg name="moduleName" arg="sign_in_with_apple_debugUnitTest" />
             <stringArg name="apiVersion" arg="1.8" />
             <stringArg name="languageVersion" arg="2.0" />
@@ -36,8 +36,8 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output-test url="file://$MODULE_DIR$/../../../../build/sign_in_with_apple/intermediates/javac/debugUnitTest/classes" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output-test url="file://$MODULE_DIR$/../../../../build/sign_in_with_apple/intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes" />
     <exclude-output />
     <content url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/test" />
     <content url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/testDebug" />

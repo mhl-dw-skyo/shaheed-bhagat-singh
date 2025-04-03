@@ -25,12 +25,14 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/res/resValues/debug">
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/res/resValues/debug" type="java-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/res/resValues/debug" type="java-resource" generated="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/source/buildConfig/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../build/flutter_inappwebview_android/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
@@ -59,6 +61,7 @@
     <orderEntry type="library" name="Gradle: androidx.tracing:tracing:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.window:window-java:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.window:window:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.getkeepsafe.relinker:relinker:1.4.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.webkit:webkit:1.12.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.browser:browser:1.8.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.6.1@aar" level="project" />
@@ -69,7 +72,7 @@
     <orderEntry type="library" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-db49896cf25ceabc44096d5f088d86414e05a7aa" level="project" />
+    <orderEntry type="library" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-cb4b5fff73850b2e42bd4de7cb9a4310a78ac40d" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.7.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation-jvm:1.8.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.22" level="project" />

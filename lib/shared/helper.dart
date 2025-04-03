@@ -1128,7 +1128,7 @@ class Helper {
     AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
     await assetsAudioPlayer.open(
       Audio('data/assets/audios/welcome.mp3'),
-      showNotification: true,
+      showNotification: false,
       autoStart: true,
       playInBackground: PlayInBackground.enabled,
     );
