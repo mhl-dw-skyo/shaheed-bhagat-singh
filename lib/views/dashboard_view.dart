@@ -3,8 +3,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_beacon/flutter_beacon.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_blue_plus/flutter_blue_plus.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:punjab_tourism/utils.dart';
@@ -15,7 +15,7 @@ import 'package:upgrader/upgrader.dart';
 import '../core.dart';
 
 class DashboardView extends GetView<DashboardController> {
-  StreamController<BluetoothState> streamController = StreamController();
+  StreamController<BluetoothAdapterState> streamController = StreamController();
 
   DashboardView({Key? key}) : super(key: key) {
     controller.initBeaconService(onUpdate: (state) {
@@ -25,7 +25,7 @@ class DashboardView extends GetView<DashboardController> {
 
   late DateTime currentBackPressTime;
   GlobalKey<ScaffoldState> scaffoldDashboardKey =
-      GlobalKey<ScaffoldState>(debugLabel: '_scaffoldDashboardKey');
+  GlobalKey<ScaffoldState>(debugLabel: '_scaffoldDashboardKey');
   CommonService commonService = Get.find();
   GuestController guestController = Get.find();
 
@@ -45,7 +45,7 @@ class DashboardView extends GetView<DashboardController> {
         color: Get.theme.primaryColor,
         child: SafeArea(
           child: Obx(
-            () => Scaffold(
+                () => Scaffold(
               key: scaffoldDashboardKey,
               backgroundColor: Get.theme.primaryColor,
               appBar: AppBar(
@@ -57,10 +57,10 @@ class DashboardView extends GetView<DashboardController> {
                 centerTitle: true,
                 title: commonService.labelData.value.data.punjabTourism.text
                     .textStyle(
-                      headline1().copyWith(
-                        color: Get.theme.indicatorColor,
-                      ),
-                    )
+                  headline1().copyWith(
+                    color: Get.theme.indicatorColor,
+                  ),
+                )
                     .make(),
                 actions: [
                   InkWell(
@@ -90,21 +90,20 @@ class DashboardView extends GetView<DashboardController> {
                 child: RefreshIndicator(
                   onRefresh: () => controller.fetchDashboardData(),
                   child: Obx(
-                    () => SingleChildScrollView(
+                        () => SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          StreamBuilder<BluetoothState>(
+                          const SizedBox(height: 25),
+                          StreamBuilder<BluetoothAdapterState>(
                               stream: streamController.stream,
                               builder: (context, snapshot) {
                                 return Visibility(
                                   visible: snapshot.hasData &&
-                                      snapshot.data == BluetoothState.stateOff,
+                                      snapshot.data ==
+                                          BluetoothAdapterState.off,
                                   child: Padding(
                                     padding: const EdgeInsets.only(
                                         bottom: 24, left: 20, right: 20),
@@ -112,7 +111,7 @@ class DashboardView extends GetView<DashboardController> {
                                       children: [
                                         Column(
                                             crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                             children: [
                                               Text(
                                                 commonService.labelData.value.data.enable_bluetooth,
@@ -120,7 +119,7 @@ class DashboardView extends GetView<DashboardController> {
                                                     color: Colors.black,
                                                     fontSize: 16,
                                                     fontWeight:
-                                                        FontWeight.w600),
+                                                    FontWeight.w600),
                                               ),
                                               SizedBox(height: 4),
                                               Text(
@@ -130,7 +129,7 @@ class DashboardView extends GetView<DashboardController> {
                                                     color: Colors.grey,
                                                     fontSize: 14,
                                                     fontWeight:
-                                                        FontWeight.normal),
+                                                    FontWeight.normal),
                                               ),
                                             ]),
                                         Spacer(),
@@ -140,7 +139,9 @@ class DashboardView extends GetView<DashboardController> {
                                             padding: EdgeInsets.only(
                                                 top: 8, bottom: 8),
                                             onTap: () {
-                                              Get.dialog(EnableBt(commonService:commonService));
+                                              Get.dialog(EnableBt(
+                                                  commonService:
+                                                  commonService));
                                             },
                                             text: commonService.labelData.value.data.enable)
                                       ],
@@ -154,11 +155,11 @@ class DashboardView extends GetView<DashboardController> {
                             children: [
                               commonService.labelData.value.data.welcomeTo.text
                                   .textStyle(
-                                    headline1().copyWith(
-                                      color: Get.theme.indicatorColor
-                                          .withOpacity(0.5),
-                                    ),
-                                  )
+                                headline1().copyWith(
+                                  color: Get.theme.indicatorColor
+                                      .withOpacity(0.5),
+                                ),
+                              )
                                   .make(),
                               const SizedBox(
                                 width: 40,
@@ -191,10 +192,10 @@ class DashboardView extends GetView<DashboardController> {
                                       commonService
                                           .labelData.value.data.entryAccess.text
                                           .textStyle(
-                                            headline4().copyWith(
-                                              color: Get.theme.highlightColor,
-                                            ),
-                                          )
+                                        headline4().copyWith(
+                                          color: Get.theme.highlightColor,
+                                        ),
+                                      )
                                           .make()
                                           .pOnly(right: 2),
                                       SvgPicture.asset(
@@ -214,26 +215,24 @@ class DashboardView extends GetView<DashboardController> {
                             child: commonService
                                 .labelData.value.data.virastEKhalsa.text
                                 .textStyle(
-                                  headline1().copyWith(
-                                    color: Get.theme.indicatorColor,
-                                    fontSize: 35,
-                                  ),
-                                )
+                              headline1().copyWith(
+                                color: Get.theme.indicatorColor,
+                                fontSize: 35,
+                              ),
+                            )
                                 .make()
                                 .pSymmetric(h: 20),
                           ),
-                          const SizedBox(
-                            height: 25,
-                          ),
+                          const SizedBox(height: 25),
                           ...commonService.dashboardData.value.data
                               .mapIndexed((currentValue, index) {
                             return currentValue.mType == "markup"
                                 ? DashboardSliderWidget(
-                                        attributes: currentValue.attributes)
-                                    .pOnly(bottom: 30)
+                                attributes: currentValue.attributes)
+                                .pOnly(bottom: 30)
                                 : DashboardCategoriesWidget(
-                                    dashboardDataModel: currentValue,
-                                  );
+                              dashboardDataModel: currentValue,
+                            );
                           }).toList(),
                         ],
                       ).pOnly(bottom: 35),

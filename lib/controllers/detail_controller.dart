@@ -23,6 +23,7 @@ class DetailController extends GetxController {
   late ItemScrollController itemScrollController;
   late ItemPositionsListener itemPositionsListener;
   var selectedBeaconId = 0.obs;
+
   @override
   Future<void> onInit() async {
     super.onInit();
@@ -47,13 +48,12 @@ class DetailController extends GetxController {
     }
   }
 
-  initializeAndPlayYTPlayer(String file) async {
+  iinitializeAndPlayYTPlayer(String file) async {
     print("KKKKKKK");
     final id = Helper.convertUrlToId(file);
 
     commonService.ytpController.value = YoutubePlayerController(
-      params: YoutubePlayerParams(
-        origin: id,
+      params: const YoutubePlayerParams(
         showControls: true,
         showFullscreenButton: true,
         loop: false,
@@ -62,24 +62,37 @@ class DetailController extends GetxController {
         playsInline: true,
       ),
     );
-    commonService.ytpController.value.playVideo();
-    //commonService.ytpController.value.m
-    commonService.ytpController.value.onFullscreenChange = (entered) {
-      if (entered) {
-        SystemChrome.setPreferredOrientations([
-          DeviceOrientation.landscapeLeft,
-          DeviceOrientation.landscapeRight,
-        ]);
-      } else {
-        SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-        Future.delayed(const Duration(seconds: 1), () {
-          commonService.ytpController.value.playVideo();
-        });
-        Future.delayed(const Duration(seconds: 5), () {
-          SystemChrome.setPreferredOrientations(DeviceOrientation.values);
-        });
-      }
-    };
+
+
+
+    // Play the video after a short delay to ensure it's ready
+    Future.delayed(Duration(milliseconds: 300), () {
+      commonService.ytpController.value.playVideo();
+    });
+
+    // Fullscreen behavior is not natively supported in youtube_player_iframe v5+
+    // You must control fullscreen outside of the player using your own UI
+    // The following is an optional workaround if you add your own toggle button:
+    // toggleFullscreen(true); toggleFullscreen(false);
+  }
+
+  void toggleFullscreen(bool enter) {
+    if (enter) {
+      SystemChrome.setPreferredOrientations([
+        DeviceOrientation.landscapeLeft,
+        DeviceOrientation.landscapeRight,
+      ]);
+    } else {
+      SystemChrome.setPreferredOrientations([
+        DeviceOrientation.portraitUp,
+      ]);
+      Future.delayed(const Duration(seconds: 1), () {
+        commonService.ytpController.value.playVideo();
+      });
+      Future.delayed(const Duration(seconds: 5), () {
+        SystemChrome.setPreferredOrientations(DeviceOrientation.values);
+      });
+    }
   }
 
   Future<void> getLocationDetailData(int locationId) async {
@@ -163,7 +176,7 @@ class DetailController extends GetxController {
             openPlayer(
                 commonService.selectedAudioFile.value, selectedBeaconId.value);
           } else {
-            initializeAndPlayYTPlayer(commonService.selectedAudioFile.value);
+            iinitializeAndPlayYTPlayer(commonService.selectedAudioFile.value);
           }
         }
       }
@@ -188,7 +201,7 @@ class DetailController extends GetxController {
     }
     try {
       final String data =
-          await rootBundle.loadString('assets/data_files/$file');
+      await rootBundle.loadString('assets/data_files/$file');
       var response = jsonDecode(data);
       if (response['status']) {
         commonService.offlineLocationDetailData.value =

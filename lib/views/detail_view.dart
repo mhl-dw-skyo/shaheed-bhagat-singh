@@ -76,7 +76,7 @@ class DetailView extends GetView<DetailController> {
                               child: AspectRatio(
                                 aspectRatio: 16 / 9,
                                 child: commonService.ytpController.value != null
-                                    ? YoutubePlayerIFrame(
+                                    ? YoutubePlayer(
                                         controller:
                                             commonService.ytpController.value,
                                       )

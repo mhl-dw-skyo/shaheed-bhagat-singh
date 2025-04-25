@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_beacon/flutter_beacon.dart';
 import 'package:get/get.dart';
 import 'package:punjab_tourism/services/common_service.dart';
 import 'package:punjab_tourism/utils.dart';
@@ -10,8 +9,17 @@ import 'package:punjab_tourism/views/mk_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class EnableBt extends StatelessWidget {
-  CommonService commonService;
-  EnableBt({super.key, required this.commonService });
+  final CommonService commonService;
+  EnableBt({super.key, required this.commonService});
+
+  Future<void> openBluetoothSettings() async {
+    const url = 'bluetooth://';
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    } else {
+      await launchUrl(Uri.parse("app-settings:"), mode: LaunchMode.externalApplication);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +47,9 @@ class EnableBt extends StatelessWidget {
                         ),
                       ),
                       InkWell(
-                        onTap: ()=>Get.back(),
+                        onTap: () => Get.back(),
                         child: Transform.rotate(
-                            angle: -95 ,
-                            child: Icon(Icons.add_circle,size: 30,)),
+                            angle: -95, child: Icon(Icons.add_circle, size: 30)),
                       )
                     ],
                   ),
@@ -106,7 +113,8 @@ class EnableBt extends StatelessWidget {
                   style: TextStyle(fontSize: 16, color: Colors.black),
                   children: [
                     TextSpan(
-                      text: commonService.labelData.value.data.go_to_Bluetooth_dialog,
+                      text:
+                      commonService.labelData.value.data.go_to_Bluetooth_dialog,
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 16,
@@ -132,7 +140,8 @@ class EnableBt extends StatelessWidget {
                   style: TextStyle(fontSize: 16, color: Colors.black),
                   children: [
                     TextSpan(
-                      text: commonService.labelData.value.data.enable_bluetooth_dialog,
+                      text:
+                      commonService.labelData.value.data.enable_bluetooth_dialog,
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 16,
@@ -151,7 +160,6 @@ class EnableBt extends StatelessWidget {
                   ],
                 ),
               ),
-
               Visibility(
                 visible: Platform.isAndroid,
                 child: Column(
@@ -162,7 +170,7 @@ class EnableBt extends StatelessWidget {
                         onTap: () {
                           try {
                             Get.back();
-                            flutterBeacon.openBluetoothSettings;
+                            openBluetoothSettings();
                           } catch (e) {}
                         },
                         text: commonService.labelData.value.data.go_to_bluetooth),
