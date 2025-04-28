@@ -190,6 +190,25 @@
             "location_id": 0,
             "location_image": "",
             "beacon_type": 0
+        },
+        {
+            "beacon_id": 70,
+            "language_id": 1,
+            "beacon_uuid": "FDA50693-A4E2-4FB1-AFCF-C6EB07647173",
+            "beacon_name": "Testing",
+            "audio_type": "1",
+            "beacon_videos": null,
+            "beacon_actions": "1",
+            "mac_address": "DC:OD:30:03:30:36",
+            "uuid": "FDA50693-A4E2-4FB1-AFCF-C6EB07647173",
+            "start_range": 0,
+            "end_range": 5,
+            "soundfile": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/hindi/1726566662_69_1.mp3",
+            "audio_duration": 0,
+            "location_name": "विरासत ए खालसा",
+            "location_id": 65,
+            "location_image": "https://bhagatsm.dwgroup.in/assets/image-not-available.jpg",
+            "beacon_type": 17
         }
     ],
     "version": "1.219",

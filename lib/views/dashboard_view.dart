@@ -3,8 +3,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_beacon/flutter_beacon.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:punjab_tourism/utils.dart';
@@ -15,7 +15,7 @@ import 'package:upgrader/upgrader.dart';
 import '../core.dart';
 
 class DashboardView extends GetView<DashboardController> {
-  StreamController<BluetoothAdapterState> streamController = StreamController();
+  StreamController<BluetoothState> streamController = StreamController();
 
   DashboardView({Key? key}) : super(key: key) {
     controller.initBeaconService(onUpdate: (state) {
@@ -96,14 +96,15 @@ class DashboardView extends GetView<DashboardController> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const SizedBox(height: 25),
-                          StreamBuilder<BluetoothAdapterState>(
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          StreamBuilder<BluetoothState>(
                               stream: streamController.stream,
                               builder: (context, snapshot) {
                                 return Visibility(
                                   visible: snapshot.hasData &&
-                                      snapshot.data ==
-                                          BluetoothAdapterState.off,
+                                      snapshot.data == BluetoothState.stateOff,
                                   child: Padding(
                                     padding: const EdgeInsets.only(
                                         bottom: 24, left: 20, right: 20),
@@ -139,9 +140,7 @@ class DashboardView extends GetView<DashboardController> {
                                             padding: EdgeInsets.only(
                                                 top: 8, bottom: 8),
                                             onTap: () {
-                                              Get.dialog(EnableBt(
-                                                  commonService:
-                                                  commonService));
+                                              Get.dialog(EnableBt(commonService:commonService));
                                             },
                                             text: commonService.labelData.value.data.enable)
                                       ],
@@ -223,7 +222,9 @@ class DashboardView extends GetView<DashboardController> {
                                 .make()
                                 .pSymmetric(h: 20),
                           ),
-                          const SizedBox(height: 25),
+                          const SizedBox(
+                            height: 25,
+                          ),
                           ...commonService.dashboardData.value.data
                               .mapIndexed((currentValue, index) {
                             return currentValue.mType == "markup"

@@ -46,8 +46,8 @@ android {
         applicationId "bhagatsm.skyo.app"
         minSdkVersion 23
         targetSdkVersion 34
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode 15
+        versionName "1.0.0"
         multiDexEnabled true
         // Add supported ABIs here
         ndk {

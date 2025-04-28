@@ -19,7 +19,7 @@ Future<void> main() async {
     DeviceOrientation.portraitUp,
   ]);
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
-  await Firebase.initializeApp();
+  //await Firebase.initializeApp();
   await initService();
 
   configLoading();

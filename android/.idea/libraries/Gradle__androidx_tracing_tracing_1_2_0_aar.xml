@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.tracing:tracing:1.2.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/0d3669b92cada90b3ff449e2eff4eaa6/transformed/jetified-tracing-1.2.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/0d3669b92cada90b3ff449e2eff4eaa6/transformed/jetified-tracing-1.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/0d3669b92cada90b3ff449e2eff4eaa6/transformed/jetified-tracing-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/1b2cd056297b5ef4e691d137d7922b4e/transformed/jetified-tracing-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/1b2cd056297b5ef4e691d137d7922b4e/transformed/jetified-tracing-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/1b2cd056297b5ef4e691d137d7922b4e/transformed/jetified-tracing-1.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

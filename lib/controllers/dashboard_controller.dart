@@ -6,7 +6,8 @@ import 'dart:math';
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_blue_plus/flutter_blue_plus.dart';
+import 'package:flutter_beacon/flutter_beacon.dart';
+// import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -19,13 +20,6 @@ import 'package:punjab_tourism/views/permissions_widget.dart';
 
 import '../core.dart';
 
-class Beacon {
-  final String proximityUUID;
-  final int rssi;
-
-  Beacon({required this.proximityUUID, required this.rssi});
-}
-
 class DashboardController extends GetxController {
   ScrollController scrollController = ScrollController();
   var buttonLoader = false.obs;
@@ -37,8 +31,8 @@ class DashboardController extends GetxController {
   var message = "".obs;
   var skipFirstTimeSteamData = true.obs;
   List<Beacon> beaconsJsonData = [];
-  StreamSubscription<BluetoothAdapterState>? _streamBluetooth;
-  StreamSubscription<List<ScanResult>>? _scanSubscription;
+  StreamSubscription<BluetoothState>? _streamBluetooth;
+  StreamSubscription<RangingResult>? _streamRanging;
   bool authorizationStatusOk = false;
   bool locationServiceEnabled = false;
   bool bluetoothEnabled = false;
@@ -62,68 +56,140 @@ class DashboardController extends GetxController {
       return location && ble;
   }
 
-  initBeaconService({required Function(BluetoothAdapterState) onUpdate}) async {
+  initBeaconService({required Function(BluetoothState) onUpdate}) async {
     var permissionsGranted = await permissionGranted();
     if (!permissionsGranted) {
       Get.put(PermissionsController());
       await Get.dialog(PermissionsWidget());
       initBeaconService(onUpdate: onUpdate);
-      return;
+    } else {
+      try {
+        var enabled = await flutterBeacon.bluetoothState;
+        onUpdate(enabled);
+        _streamBluetooth = flutterBeacon
+            .bluetoothStateChanged()
+            .listen((BluetoothState state) async {
+          onUpdate(state);
+          switch (state.value) {
+            case 'STATE_ON':
+              print("Bluetooth On");
+              initScanBeacon();
+              break;
+            case 'STATE_OFF':
+              print("Bluetooth Off");
+              await pauseScanBeacon();
+              await checkAllRequirements();
+              break;
+          }
+        });
+      } catch (e) {}
     }
-
-    _streamBluetooth = FlutterBluePlus.adapterState.listen((state) {
-      onUpdate(state);
-      if (state == BluetoothAdapterState.on) {
-        initScanBeacon();
-      } else {
-        pauseScanBeacon();
-      }
-    });
-  }
-
-  initScanBeacon() {
-    print("Scanning started...");
-    FlutterBluePlus.startScan(timeout: const Duration(seconds: 10));
-
-    _scanSubscription = FlutterBluePlus.scanResults.listen((results) {
-      beaconsJsonData.clear();
-      for (ScanResult r in results) {
-        final beaconId = r.advertisementData.serviceUuids.isNotEmpty
-            ? r.advertisementData.serviceUuids.first
-            : r.device.remoteId.str;
-
-        beaconsJsonData.add(Beacon(
-          proximityUUID: beaconId.toString(),
-          rssi: r.rssi,
-        ));
-      }
-
-      beaconExecutionAlgorithm();
-    });
   }
 
   pauseScanBeacon() async {
-    await FlutterBluePlus.stopScan();
-    await _scanSubscription?.cancel();
-    _scanSubscription = null;
-    _beacons.clear();
+    _streamRanging?.pause();
+    if (_beacons.isNotEmpty) {
+      _beacons.clear();
+    }
+  }
+
+  checkAllRequirements() async {
+    final bluetoothState = await flutterBeacon.bluetoothState;
+    final bluetoothEnabled = bluetoothState == BluetoothState.stateOn;
+    await flutterBeacon.authorizationStatus.then((element) async {
+      final authorizationStatusOk = element.value == "ALLOWED" ||
+          element.value == "ALWAYS" ||
+          element.value == "WHEN_IN_USE";
+      final locationServiceEnabled =
+      await flutterBeacon.checkLocationServicesIfEnabled;
+      this.authorizationStatusOk = authorizationStatusOk;
+      this.locationServiceEnabled = locationServiceEnabled;
+      this.bluetoothEnabled = bluetoothEnabled;
+    });
+  }
+
+  initScanBeacon() async {
+    try {
+      print("initializeScanning");
+      // if you want to manage manual checking about the required permissions
+      await flutterBeacon.initializeScanning;
+    } on PlatformException catch (e) {
+      // library failed to initialize, check code and message
+      print("EXEPPPPPPP $e");
+    }
+    await checkAllRequirements();
+    print(
+        "$authorizationStatusOk -- $locationServiceEnabled -- $bluetoothEnabled");
+    if (!authorizationStatusOk ||
+        !locationServiceEnabled ||
+        !bluetoothEnabled) {
+      return;
+    }
+    List<Region> regions = [];
+    if (Platform.isAndroid) {
+      for (var item in commonService.macAddresses) {
+        regions.add(Region(
+          identifier: item, proximityUUID: item,
+          // macAddress: item,
+        ));
+      }
+    } else {
+      for (var item in commonService.uuid) {
+        regions.add(Region(
+          identifier: item,
+          proximityUUID: item,
+        ));
+      }
+    }
+
+    if (regions.isNotEmpty) {
+      List<Region> regionsList = regions;
+      if (Platform.isAndroid) {
+        regionsList = [regions.first];
+      }
+      var regionsA =
+      Platform.isIOS ? regions : [Region(identifier: 'com.beacon')];
+      print(regionsList);
+      _streamRanging =
+          flutterBeacon.ranging(regionsA).listen((RangingResult result) async {
+            // print("Entered");
+            print(result);
+            if (result.beacons.isNotEmpty) {
+              beaconsJsonData = result.beacons;
+              beaconsJsonData.sort((m1, m2) {
+                var r = m2.rssi.compareTo(m1.rssi);
+                if (r != 0) return r;
+                return m2.rssi.compareTo(m1.rssi);
+              });
+            }
+            Timer(const Duration(seconds: 1), () async {
+              beaconExecutionAlgorithm();
+            });
+          });
+    }
   }
 
   beaconExecutionAlgorithm() async {
+    // Return early if no beacons found
     if (beaconsJsonData.isEmpty) return;
 
     Beacon beaconItem = beaconsJsonData.first;
+
+    // Return if there is no beacon data to compare
     if (commonService.beaconsData.value.data.isEmpty) return;
 
+    // Skip if this UUID was already played
     if (commonService.lastPlayedMacAddress.value == beaconItem.proximityUUID) {
       return;
     }
 
+    // Calculate distance if RSSI is available
     double deviceDistanceInMeter = (beaconItem.rssi != 0)
         ? double.parse(pow(10, (((beaconItem.rssi).abs() - 59) / (10 * 2)))
         .toStringAsFixed(2))
         : 99999999999999;
 
+    // Find if device is in range
     int deviceInOurRangeIndex = commonService.beaconsData.value.data.indexWhere(
             (element) =>
         element.uuid.toLowerCase() ==
@@ -131,11 +197,14 @@ class DashboardController extends GetxController {
             (element.startRange <= deviceDistanceInMeter &&
                 deviceDistanceInMeter <= element.endRange));
 
+    // Return if no beacon is found within range
     if (deviceInOurRangeIndex == -1) return;
 
+    // Get the beacon item object
     BeaconItem beaconItemObj =
     commonService.beaconsData.value.data[deviceInOurRangeIndex];
 
+    // Stop everything and exit if the action is '2'
     if (beaconItemObj.action == '2') {
       commonService.inMuseum.value = false;
       commonService.inMuseum.refresh();
@@ -144,16 +213,19 @@ class DashboardController extends GetxController {
       });
       commonService.assetsAudioPlayer.value.dispose();
       commonService.assetsAudioPlayer.value = AssetsAudioPlayer();
-      commonService.sameCategoryBeacons.clear();
+      commonService.sameCategoryBeacons
+          .clear(); // Clear instead of reassigning empty array
       commonService.sameCategoryBeacons.refresh();
       commonService.lastPlayedMacAddress.value = '';
       commonService.lastPlayedMacAddress.refresh();
       return;
     }
 
+    // Update inMuseum status
     commonService.inMuseum.value = true;
     commonService.inMuseum.refresh();
 
+    // Handle for Android (can be expanded for iOS)
     if (commonService.lastPlayedMacAddress.value != beaconItemObj.uuid) {
       commonService.selectedBeacon.value = beaconItemObj;
       commonService.selectedBeacon.refresh();
@@ -176,9 +248,11 @@ class DashboardController extends GetxController {
           Get.toNamed('/detail');
         }
       }
+      // Update category ID
       catId.value = beaconItemObj.type;
     }
 
+    // Update beacons of the same category
     for (var element in commonService.beaconsData.value.data) {
       if (element.type == beaconItemObj.type && element.locationId > 0) {
         int sameTypeBeaconIndex = commonService.sameCategoryBeacons
@@ -190,6 +264,22 @@ class DashboardController extends GetxController {
       }
     }
 
+    if (beaconItemObj.soundFile.isNotEmpty) {
+      // Play the audio from the sound file
+      print("Playing audio for beacon: ${beaconItemObj.soundFile}");
+      commonService.assetsAudioPlayer.value.open(
+        Audio.network(beaconItemObj.soundFile),
+        showNotification: true,
+        autoStart: true,
+      ).then((value) {
+        commonService.assetsAudioPlayer.value.play();
+        print("Audio is now playing...");
+      }).catchError((e) {
+        print("Error playing audio: $e");
+      });
+    }
+
+    // Update last played UUID
     commonService.lastPlayedMacAddress.value = beaconItemObj.uuid;
     commonService.lastPlayedMacAddress.refresh();
   }
@@ -288,18 +378,18 @@ class DashboardController extends GetxController {
     if (GetStorage().read('language_id') != '' ||
         GetStorage().read('language_id') != null) {
       switch (GetStorage().read('language_id')) {
-      // case 1:
-      //   file = "beacon.json";
-      //   folderName = "english";
-      //   break;
-      // case 2:
-      //   file = "beacon_hi.json";
-      //   folderName = "hindi";
-      //   break;
-      // case 3:
-      //   file = "beacon_pu.json";
-      //   folderName = "punjabi";
-      //   break;
+      case 1:
+        file = "beacon.json";
+        folderName = "english";
+        break;
+      case 2:
+        file = "beacon_hi.json";
+        folderName = "hindi";
+        break;
+      case 3:
+        file = "beacon_pu.json";
+        folderName = "punjabi";
+        break;
       }
     }
     try {
