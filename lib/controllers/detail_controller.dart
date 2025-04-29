@@ -120,6 +120,18 @@ class DetailController extends GetxController {
             .offlineLocationDetailData.value.data
             .elementAt(locDataIndex)
             .locationDetail;
+
+        // Print baconListing for debugging
+        print("Bacon Listing: ");
+        commonService.offlineLocationDetailData.value.data
+            .elementAt(locDataIndex)
+            .locationDetail
+            .attributes
+            .baconListing
+            .forEach((item) {
+          print("isPrimary: ${item.isPrimary}, FileType: ${item.fileType}");
+        });
+
         int audioFileIndex = commonService.offlineLocationDetailData.value.data
             .elementAt(locDataIndex)
             .locationDetail
@@ -172,7 +184,7 @@ class DetailController extends GetxController {
               .baconListing
               .elementAt(audioFileIndex)
               .id;
-          if (commonService.selectedFileType.value == "A") {
+          if (commonService.selectedFileType.value == "A" || commonService.selectedFileType.value == "") {
             openPlayer(
                 commonService.selectedAudioFile.value, selectedBeaconId.value);
           } else {
@@ -207,7 +219,7 @@ class DetailController extends GetxController {
         commonService.offlineLocationDetailData.value =
             OfflineLocationsModel.fromJson(response);
         commonService.offlineLocationDetailData.refresh();
-        // print(response['data']);
+         print("offline Data $response['data'] ");
       }
     } catch (e) {
       throw Exception("Error: ${e.toString()}");

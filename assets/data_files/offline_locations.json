@@ -718,18 +718,12 @@
                     "description2": "Dastaan - e - Shahadat",
                     "beacon_listing": [
                         {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": ""
-                        },
-                        {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": "",
+                            "sound_type": "A",
+                            "beacon_id": "71",
+                            "is_primary": 1,
+                            "english_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745841440_71_1726812564_60_Walkthrough_new.mp3",
+                            "hindi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/hindi/1745841440_71_1726812638_60_Walkthrough(1).mp3",
+                            "punjabi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/punjabi/1745841440_71_1726567036_67_welcome.mp3",
                             "is_next_confirm": 1
                         }
                     ],
@@ -750,8 +744,8 @@
                     "vr_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=1&location_id=64&media_type=4",
                     "video360_icon_text": null,
                     "video360_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=1&location_id=64&media_type=7",
-                    "wlatitude": null,
-                    "wlongitude": null
+                    "wlatitude": "",
+                    "wlongitude": ""
                 }
             }
         },
@@ -775,7 +769,7 @@
                         {
                             "language_id": 1,
                             "language_name": "English",
-                            "description": "Virasat-e-Khalsa (formerly known as Khalsa Heritage Memorial Complex) is a museum located at Anandpur Sahib. The museum gives an insight to the events that took place in Punjab five hundred years ago which gave birth to Sikhism and finally the Khalsa Panth. The museum throws light on the vision of the great Gurus, the eternal message of peace and brotherhood which they delivered to the whole mankind and the rich culture and heritage of Punjab. The museum is intended to commemorate 500 years of Sikh history and the 300th anniversary of the Khalsa, the scriptures written by the 10th and last Guru Sh. Guru Gobind Singh Ji founder of modern Sikhism."
+                            "description": "Virasat E khalsa"
                         },
                         {
                             "language_id": 3,
@@ -792,20 +786,14 @@
                     "longitude": "",
                     "image_path": "https://bhagatsm.dwgroup.in/assets/static/locations/gallery/1708585267_65_virasat-e-khalsa.jpeg",
                     "is_audio_auto_play": 0,
-                    "description2": "Virasat-e-Khalsa (formerly known as Khalsa Heritage Memorial Complex) is a museum located at Anandpur Sahib. The museum gives an insight to the events that took place in Punjab five hundred years ago which gave birth to Sikhism and finally the Khalsa Panth. The museum throws light on the vision of the great Gurus, the eternal message of peace and brotherhood which they delivered to the whole mankind and the rich culture and heritage of Punjab. The museum is intended to commemorate 500 years of Sikh history and the 300th anniversary of the Khalsa, the scriptures written by the 10th and last Guru Sh. Guru Gobind Singh Ji founder of modern Sikhism.",
+                    "description2": "Virasat E khalsa",
                     "beacon_listing": [
                         {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": ""
-                        },
-                        {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
+                            "sound_type": "A",
+                            "beacon_id": "70",
+                            "is_primary": 1,
+                            "english_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745588784_70_1730802412_61_1726812638_60_Walkthrough(1).mp3",
+                            "hindi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/hindi/1745586289_70_1730802412_61_1726812638_60_Walkthrough(1).mp3",
                             "punjabi_sound_file": "",
                             "is_next_confirm": 1
                         }

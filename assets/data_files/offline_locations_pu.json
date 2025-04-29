@@ -718,18 +718,12 @@
                     "description2": "ਦਾਸਤਾਨ - ਏ - ਸ਼ਹਾਦਤ",
                     "beacon_listing": [
                         {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": ""
-                        },
-                        {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": "",
+                            "sound_type": "A",
+                            "beacon_id": "71",
+                            "is_primary": 1,
+                            "english_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745841440_71_1726812564_60_Walkthrough_new.mp3",
+                            "hindi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/hindi/1745841440_71_1726812638_60_Walkthrough(1).mp3",
+                            "punjabi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/punjabi/1745841440_71_1726567036_67_welcome.mp3",
                             "is_next_confirm": 1
                         }
                     ],
@@ -750,8 +744,8 @@
                     "vr_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=3&location_id=64&media_type=4",
                     "video360_icon_text": null,
                     "video360_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=3&location_id=64&media_type=7",
-                    "wlatitude": null,
-                    "wlongitude": null
+                    "wlatitude": "",
+                    "wlongitude": ""
                 }
             }
         },
@@ -780,7 +774,7 @@
                         {
                             "language_id": 3,
                             "language_name": "ਪੰਜਾਬੀ",
-                            "description": "ਵਿਰਾਸਤ-ਏ-ਖਾਲਸਾ (ਪਹਿਲਾਂ ਜਿਸ ਨੂੰ ਖਾਲਸਾ ਹਰੀਟੇਜ ਮੈਮੋਰੀਅਲ ਕਾਮਪਲੈਕਸ ਦੇ ਰੂਪ ਵਿੱਚ ਜਾਣਿਆ ਜਾਂਦਾ ਸੀ) ਇੱਕ ਅਜਾਇਬ ਘਰ ਹੈ ਜੋ ਆਨੰਦਪੁਰ ਸਾਹਿਬ ਵਿੱਚ ਸਥਿਤ ਹੈ। ਇਸ ਅਜਾਇਬ ਘਰ ਵਿੱਚ ਉਹ ਘਟਨਾਵਾਂ ਦੱਸੀਆਂ ਗਈਆਂ ਹਨ ਜੋ ਪੰਜ ਸੌ ਸਾਲ ਪਹਿਲਾਂ ਪੰਜਾਬ ਵਿੱਚ ਹੋਈਆਂ ਅਤੇ ਸਿੱਖ ਧਰਮ ਅਤੇ ਆਖ਼ਰਕਾਰ ਖਾਲਸਾ ਪੰਥ ਦੇ ਜਨਮ ਦਾ ਕਾਰਨ ਬਣੀਆਂ। ਇਸ ਅਜਾਇਬ ਘਰ ਵਿੱਚ ਮਹਾਨ ਗੁਰਾਂ ਦੀ ਦ੍ਰਿਸ਼ਟੀ, ਜੋ ਸਾਰੇ ਮਨੁੱਖਤਾ ਨੂੰ ਸ਼ਾਂਤੀ ਅਤੇ ਭਰਾਵਾਂ ਦਾ ਸਦੀਵੀ ਸੰਦੇਸ਼ ਦੇਣਗੇ, ਨੂੰ ਉਜਾਗਰ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਪੰਜਾਬ ਦੀ ਸ਼ਾਨਦਾਰ ਸੰਸਕ੍ਰਿਤੀ ਅਤੇ ਵਿਰਾਸਤ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦਿੱਤੀ ਗਈ ਹੈ। ਇਸ ਅਜਾਇਬ ਘਰ ਨੂੰ 500 ਸਾਲਾਂ ਦੀ ਸਿੱਖ ਇਤਿਹਾਸ ਅਤੇ ਖਾਲਸਾ ਦੇ 300 ਸਾਲਾਂ ਦੀ ਵਰ੍ਹੇਗੰਢ ਮਨਾਉਣ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ। ਇਹ ਸ਼੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ, ਜੋ 10ਵੇਂ ਅਤੇ ਅਖੀਰਲੇ ਗੁਰੂ ਸਨ, ਦੁਆਰਾ ਲਿਖੇ ਪਵਿੱਤਰ ਗ੍ਰੰਥਾਂ ਅਤੇ ਆਧੁਨਿਕ ਸਿੱਖ ਧਰਮ ਦੇ ਸਿਰਜਣਹਾਰ ਦੀ ਯਾਦ ਵਿੱਚ ਬਣਾਇਆ ਗਿਆ ਹੈ।\n "
+                            "description": "ਵਿਰਾਸਤ ਇ ਖਾਲਸਾ"
                         },
                         {
                             "language_id": 2,
@@ -792,20 +786,14 @@
                     "longitude": "",
                     "image_path": "https://bhagatsm.dwgroup.in/assets/static/locations/gallery/1708585267_65_virasat-e-khalsa.jpeg",
                     "is_audio_auto_play": 0,
-                    "description2": "ਵਿਰਾਸਤ-ਏ-ਖਾਲਸਾ (ਪਹਿਲਾਂ ਜਿਸ ਨੂੰ ਖਾਲਸਾ ਹਰੀਟੇਜ ਮੈਮੋਰੀਅਲ ਕਾਮਪਲੈਕਸ ਦੇ ਰੂਪ ਵਿੱਚ ਜਾਣਿਆ ਜਾਂਦਾ ਸੀ) ਇੱਕ ਅਜਾਇਬ ਘਰ ਹੈ ਜੋ ਆਨੰਦਪੁਰ ਸਾਹਿਬ ਵਿੱਚ ਸਥਿਤ ਹੈ। ਇਸ ਅਜਾਇਬ ਘਰ ਵਿੱਚ ਉਹ ਘਟਨਾਵਾਂ ਦੱਸੀਆਂ ਗਈਆਂ ਹਨ ਜੋ ਪੰਜ ਸੌ ਸਾਲ ਪਹਿਲਾਂ ਪੰਜਾਬ ਵਿੱਚ ਹੋਈਆਂ ਅਤੇ ਸਿੱਖ ਧਰਮ ਅਤੇ ਆਖ਼ਰਕਾਰ ਖਾਲਸਾ ਪੰਥ ਦੇ ਜਨਮ ਦਾ ਕਾਰਨ ਬਣੀਆਂ। ਇਸ ਅਜਾਇਬ ਘਰ ਵਿੱਚ ਮਹਾਨ ਗੁਰਾਂ ਦੀ ਦ੍ਰਿਸ਼ਟੀ, ਜੋ ਸਾਰੇ ਮਨੁੱਖਤਾ ਨੂੰ ਸ਼ਾਂਤੀ ਅਤੇ ਭਰਾਵਾਂ ਦਾ ਸਦੀਵੀ ਸੰਦੇਸ਼ ਦੇਣਗੇ, ਨੂੰ ਉਜਾਗਰ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਪੰਜਾਬ ਦੀ ਸ਼ਾਨਦਾਰ ਸੰਸਕ੍ਰਿਤੀ ਅਤੇ ਵਿਰਾਸਤ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦਿੱਤੀ ਗਈ ਹੈ। ਇਸ ਅਜਾਇਬ ਘਰ ਨੂੰ 500 ਸਾਲਾਂ ਦੀ ਸਿੱਖ ਇਤਿਹਾਸ ਅਤੇ ਖਾਲਸਾ ਦੇ 300 ਸਾਲਾਂ ਦੀ ਵਰ੍ਹੇਗੰਢ ਮਨਾਉਣ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ। ਇਹ ਸ਼੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ, ਜੋ 10ਵੇਂ ਅਤੇ ਅਖੀਰਲੇ ਗੁਰੂ ਸਨ, ਦੁਆਰਾ ਲਿਖੇ ਪਵਿੱਤਰ ਗ੍ਰੰਥਾਂ ਅਤੇ ਆਧੁਨਿਕ ਸਿੱਖ ਧਰਮ ਦੇ ਸਿਰਜਣਹਾਰ ਦੀ ਯਾਦ ਵਿੱਚ ਬਣਾਇਆ ਗਿਆ ਹੈ।\n ",
+                    "description2": "ਵਿਰਾਸਤ ਇ ਖਾਲਸਾ",
                     "beacon_listing": [
                         {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": ""
-                        },
-                        {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
+                            "sound_type": "A",
+                            "beacon_id": "70",
+                            "is_primary": 1,
+                            "english_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745588784_70_1730802412_61_1726812638_60_Walkthrough(1).mp3",
+                            "hindi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/hindi/1745586289_70_1730802412_61_1726812638_60_Walkthrough(1).mp3",
                             "punjabi_sound_file": "",
                             "is_next_confirm": 1
                         }

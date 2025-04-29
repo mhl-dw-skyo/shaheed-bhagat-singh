@@ -718,18 +718,12 @@
                     "description2": "दास्तान-ए-शहादत",
                     "beacon_listing": [
                         {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": ""
-                        },
-                        {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": "",
+                            "sound_type": "A",
+                            "beacon_id": "71",
+                            "is_primary": 1,
+                            "english_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745841440_71_1726812564_60_Walkthrough_new.mp3",
+                            "hindi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/hindi/1745841440_71_1726812638_60_Walkthrough(1).mp3",
+                            "punjabi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/punjabi/1745841440_71_1726567036_67_welcome.mp3",
                             "is_next_confirm": 1
                         }
                     ],
@@ -750,8 +744,8 @@
                     "vr_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=2&location_id=64&media_type=4",
                     "video360_icon_text": null,
                     "video360_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=2&location_id=64&media_type=7",
-                    "wlatitude": null,
-                    "wlongitude": null
+                    "wlatitude": "",
+                    "wlongitude": ""
                 }
             }
         },
@@ -785,27 +779,21 @@
                         {
                             "language_id": 2,
                             "language_name": "हिन्दी",
-                            "description": "विरासत-ए-खालसा (जिसे पहले खालसा हेरिटेज मेमोरियल कॉम्प्लेक्स के नाम से जाना जाता था) आनंदपुर साहिब में स्थित एक संग्रहालय है। यह संग्रहालय उन घटनाओं की झलक प्रस्तुत करता है जो पंजाब में पांच सौ साल पहले हुई थीं और जिनसे सिख धर्म का उदय हुआ और अंततः खालसा पंथ का जन्म हुआ। यह संग्रहालय महान गुरुओं की दृष्टि, शांति और भाईचारे का शाश्वत संदेश, जिसे उन्होंने समस्त मानव जाति को दिया, और पंजाब की समृद्ध संस्कृति और धरोहर पर प्रकाश डालता है। यह संग्रहालय सिख इतिहास के 500 वर्षों और खालसा के 300वें वर्षगांठ को मनाने के उद्देश्य से बनाया गया है। यह संग्रहालय 10वें और अंतिम गुरु श्री गुरु गोबिंद सिंह जी द्वारा लिखे गए शास्त्रों, जो आधुनिक सिख धर्म के संस्थापक थे, की स्मृति में समर्पित है।\n "
+                            "description": "विरासत ए खालसा"
                         }
                     ],
                     "latitude": "",
                     "longitude": "",
                     "image_path": "https://bhagatsm.dwgroup.in/assets/static/locations/gallery/1708585267_65_virasat-e-khalsa.jpeg",
                     "is_audio_auto_play": 0,
-                    "description2": "विरासत-ए-खालसा (जिसे पहले खालसा हेरिटेज मेमोरियल कॉम्प्लेक्स के नाम से जाना जाता था) आनंदपुर साहिब में स्थित एक संग्रहालय है। यह संग्रहालय उन घटनाओं की झलक प्रस्तुत करता है जो पंजाब में पांच सौ साल पहले हुई थीं और जिनसे सिख धर्म का उदय हुआ और अंततः खालसा पंथ का जन्म हुआ। यह संग्रहालय महान गुरुओं की दृष्टि, शांति और भाईचारे का शाश्वत संदेश, जिसे उन्होंने समस्त मानव जाति को दिया, और पंजाब की समृद्ध संस्कृति और धरोहर पर प्रकाश डालता है। यह संग्रहालय सिख इतिहास के 500 वर्षों और खालसा के 300वें वर्षगांठ को मनाने के उद्देश्य से बनाया गया है। यह संग्रहालय 10वें और अंतिम गुरु श्री गुरु गोबिंद सिंह जी द्वारा लिखे गए शास्त्रों, जो आधुनिक सिख धर्म के संस्थापक थे, की स्मृति में समर्पित है।\n ",
+                    "description2": "विरासत ए खालसा",
                     "beacon_listing": [
                         {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
-                            "punjabi_sound_file": ""
-                        },
-                        {
-                            "beacon_id": "",
-                            "is_primary": 0,
-                            "english_sound_file": "",
-                            "hindi_sound_file": "",
+                            "sound_type": "A",
+                            "beacon_id": "70",
+                            "is_primary": 1,
+                            "english_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745588784_70_1730802412_61_1726812638_60_Walkthrough(1).mp3",
+                            "hindi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/hindi/1745586289_70_1730802412_61_1726812638_60_Walkthrough(1).mp3",
                             "punjabi_sound_file": "",
                             "is_next_confirm": 1
                         }
