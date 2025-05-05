@@ -26,14 +26,15 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-19024101/android.firebase_dynamic_links.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-19024101/android.firebase_dynamic_links.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-19024101/android.firebase_dynamic_links.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-19024101/android.firebase_dynamic_links.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-19024101/android.firebase_dynamic_links.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-19024101/android.firebase_dynamic_links.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.iml" filepath="$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1793651886/android.flutter_blue_plus_android.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.iml" filepath="$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-2002925093/android.flutter_beacon.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.iml" filepath="$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1861555758/android.flutter_downloader.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-473118813/android.flutter_inappwebview_android.iml" filepath="$PROJECT_DIR$/.idea/modules/-473118813/android.flutter_inappwebview_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/426540889/android.flutter_inappwebview_android.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/426540889/android.flutter_inappwebview_android.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/426540889/android.flutter_inappwebview_android.main.iml" filepath="$PROJECT_DIR$/.idea/modules/426540889/android.flutter_inappwebview_android.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/426540889/android.flutter_inappwebview_android.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/426540889/android.flutter_inappwebview_android.unitTest.iml" />

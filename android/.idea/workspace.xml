@@ -21,8 +21,7 @@
       <module name="android.package_info_plus" />
       <module name="android.permission_handler_android.androidTest" />
       <module name="android.permission_handler_android.unitTest" />
-      <module name="android.flutter_blue_plus_android.main" />
-      <module name="android.flutter_blue_plus_android.unitTest" />
+      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.androidTest~1" />
       <module name="android.package_info_plus.androidTest" />
       <module name="android.package_info_plus.unitTest" />
       <module name="android.rive_common" />
@@ -33,8 +32,10 @@
       <module name="android.sign_in_with_apple" />
       <module name="android.permission_handler_android" />
       <module name="com.amolg.flutterbarcodescanner.android.flutter_barcode_scanner" />
+      <module name="android.flutter_beacon.androidTest" />
       <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android" />
       <module name="android.app.main" />
+      <module name="android.flutter_inappwebview_android" />
       <module name="android.flutter_downloader.unitTest" />
       <module name="android.assets_audio_player.androidTest" />
       <module name="android.device_info_plus.unitTest" />
@@ -42,7 +43,7 @@
       <module name="android.device_info_plus.androidTest" />
       <module name="android.sqflite_android" />
       <module name="android.firebase_core.main" />
-      <module name="com.amolg.flutterbarcodescanner.android.flutter_barcode_scanner.unitTest~1" />
+      <module name="com.amolg.flutterbarcodescanner.android.flutter_barcode_scanner.androidTest~1" />
       <module name="android.feasybeacon" />
       <module name="com.amolg.flutterbarcodescanner.android.flutter_barcode_scanner.main~1" />
       <module name="android.firebase_dynamic_links.main" />
@@ -52,17 +53,14 @@
       <module name="android.firebase_core.unitTest" />
       <module name="gradle" />
       <module name="android.assets_audio_player.main" />
-      <module name="com.amolg.flutterbarcodescanner.android.flutter_barcode_scanner.androidTest~1" />
+      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.main~1" />
       <module name="android.flutter_downloader" />
       <module name="android.assets_audio_player.unitTest" />
       <module name="android.device_info_plus.main" />
-      <module name="android.flutter_blue_plus_android.androidTest" />
-      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.main~1" />
+      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.unitTest~1" />
       <module name="android.flutter_inappwebview_android.androidTest" />
       <module name="android.app" />
-      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.unitTest~1" />
-      <module name="android.flutter_blue_plus_android" />
-      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.androidTest~1" />
+      <module name="com.amolg.flutterbarcodescanner.android.flutter_barcode_scanner.unitTest~1" />
       <module name="android.url_launcher_android" />
       <module name="android.flutter_downloader.androidTest" />
       <module name="android.flutter_plugin_android_lifecycle.androidTest" />
@@ -70,6 +68,7 @@
       <module name="android.fluttertoast.unitTest" />
       <module name="android.path_provider_android" />
       <module name="android.firebase_core" />
+      <module name="android.flutter_beacon.main" />
       <module name="android.package_info_plus.main" />
       <module name="android.app.androidTest" />
       <module name="android.firebase_dynamic_links.androidTest" />
@@ -100,19 +99,15 @@
       <module name="android.url_launcher_android.main" />
       <module name="android.url_launcher_android.unitTest" />
       <module name="android.url_launcher_android.androidTest" />
+      <module name="android.flutter_beacon" />
+      <module name="android.flutter_beacon.unitTest" />
       <module name="gradle.main" />
       <module name="gradle.test" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e86584-6056-4d04-bbf7-1500090f1dac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/data_files/offline_locations.json" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/data_files/offline_locations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/data_files/offline_locations_hi.json" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/data_files/offline_locations_hi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/data_files/offline_locations_pu.json" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/data_files/offline_locations_pu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/controllers/dashboard_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/controllers/dashboard_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/controllers/detail_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/controllers/detail_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +117,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=1364216666000FL)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/shreedevelopers/.android/avd/Pixel_6_Pro_API_33.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -177,40 +172,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;ApkExportedModule&quot;: &quot;android.app&quot;,
-    &quot;BundleExportedModule&quot;: &quot;android.app&quot;,
-    &quot;ExportApk.ApkPathForandroid.app&quot;: &quot;/Users/manishkumar/Documents/ManishWorkSpace/shaheed-bhagat-singh/android/app&quot;,
-    &quot;ExportBundle.BundlePathForandroid.app&quot;: &quot;/Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/android/app&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ScreenshotViewer.SavePath&quot;: &quot;/Users/manishkumar/Desktop&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;bug/beacon__issue&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/android&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "ApkExportedModule": "android.app",
+    "BundleExportedModule": "android.app",
+    "ExportApk.ApkPathForandroid.app": "/Users/manishkumar/Documents/ManishWorkSpace/shaheed-bhagat-singh/android/app",
+    "ExportBundle.BundlePathForandroid.app": "/Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/android/app",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ScreenshotViewer.SavePath": "/Users/manishkumar/Desktop",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "bug/beacon__issue",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/android",
+    "project.structure.last.edited": "SDK Location",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "show.migrate.to.gradle.popup": "false"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ExportApk.BuildVariants&quot;: [
-      &quot;release&quot;
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
     ]
   }
-}</component>
+}]]></component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />

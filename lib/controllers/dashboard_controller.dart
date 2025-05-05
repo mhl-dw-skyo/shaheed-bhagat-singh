@@ -20,7 +20,7 @@ import 'package:punjab_tourism/views/permissions_widget.dart';
 
 import '../core.dart';
 
-class DashboardController extends GetxController {
+class DashboardController extends GetxController with WidgetsBindingObserver{
   ScrollController scrollController = ScrollController();
   var buttonLoader = false.obs;
   var loader = false.obs;
@@ -43,6 +43,7 @@ class DashboardController extends GetxController {
   @override
   Future<void> onInit() async {
     super.onInit();
+    WidgetsBinding.instance.addObserver(this);
   }
 
   Future<bool> permissionGranted() async {
@@ -108,6 +109,24 @@ class DashboardController extends GetxController {
     });
   }
 
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      initBeaconService(onUpdate: (state) {
+        print("Bluetooth state updated: $state");
+      });
+    }
+  }
+
+  @override
+  void onClose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _streamBluetooth?.cancel();
+    _streamRanging?.cancel();
+    super.onClose();
+  }
+
+
   initScanBeacon() async {
     try {
       print("initializeScanning");
@@ -121,7 +140,6 @@ class DashboardController extends GetxController {
     print(
         "$authorizationStatusOk -- $locationServiceEnabled -- $bluetoothEnabled");
     if (!authorizationStatusOk ||
-        !locationServiceEnabled ||
         !bluetoothEnabled) {
       return;
     }
