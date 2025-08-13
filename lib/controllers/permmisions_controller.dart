@@ -4,11 +4,11 @@ import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class PermissionsController extends GetxController {
-  Rx<PermissionStatus> location = Rx(PermissionStatus.restricted);
-  Rx<PermissionStatus> storage = Rx(PermissionStatus.restricted);
-  Rx<PermissionStatus> ble = Rx(PermissionStatus.restricted);
-  Rx<PermissionStatus> bleConnect = Rx(PermissionStatus.restricted);
-  Rx<PermissionStatus> bleScan = Rx(PermissionStatus.restricted);
+  Rx<PermissionStatus> location = PermissionStatus.denied.obs;
+  Rx<PermissionStatus> storage = PermissionStatus.denied.obs;
+  Rx<PermissionStatus> ble = PermissionStatus.denied.obs;
+  Rx<PermissionStatus> bleConnect = PermissionStatus.denied.obs;
+  Rx<PermissionStatus> bleScan = PermissionStatus.denied.obs;
   RxString status = "".obs;
 
   @override
@@ -18,81 +18,86 @@ class PermissionsController extends GetxController {
   }
 
   Future<void> checkDefault({required bool init}) async {
-    var loc = await Permission.location.status;
-    var sto = await Permission.storage.status;
-    var bleD = await Permission.bluetooth.status;
-    var bleConnectD = await Permission.bluetoothConnect.status;
-    var bleScanD = await Permission.bluetoothScan.status;
-
-    if (loc == PermissionStatus.granted) {
-      location.value = PermissionStatus.granted;
+    // Location
+    if (Platform.isIOS) {
+      location.value = await Permission.locationWhenInUse.status;
     } else {
-      location.value = PermissionStatus.restricted;
-    }
-    if (sto == PermissionStatus.granted) {
-      storage.value = PermissionStatus.granted;
-    } else {
-      storage.value = PermissionStatus.restricted;
-    }
-    if (bleD == PermissionStatus.granted) {
-      ble.value = PermissionStatus.granted;
-    } else {
-      ble.value = PermissionStatus.restricted;
+      location.value = await Permission.location.status;
     }
 
-    if (bleConnectD == PermissionStatus.granted) {
-      bleConnect.value = PermissionStatus.granted;
-    } else {
-      bleConnect.value = PermissionStatus.restricted;
-    }
-    if (bleScanD == PermissionStatus.granted) {
-      bleScan.value = PermissionStatus.granted;
-    } else {
-      bleScan.value = PermissionStatus.restricted;
-    }
+    // Storage (Android only, ignored on iOS)
+    storage.value = await Permission.storage.status;
+
+    // Bluetooth
+    ble.value = await Permission.bluetooth.status;
+    bleConnect.value = await Permission.bluetoothConnect.status;
+    bleScan.value = await Permission.bluetoothScan.status;
   }
 
-  askForLocation() async {
+  Future<void> askForLocation() async {
     try {
-      location.value = await Permission.location.request();
+      if (Platform.isIOS) {
+        location.value = await Permission.locationWhenInUse.request();
+      } else {
+        location.value = await Permission.location.request();
+      }
       validate();
     } catch (ee) {
-      print(ee);
+      print("Error requesting location: $ee");
     }
   }
 
-  askForStorage() async {
-    storage.value = await Permission.storage.request();
+  Future<void> askForStorage() async {
+    if (Platform.isAndroid) {
+      storage.value = await Permission.storage.request();
+    }
   }
 
-  askForBluetooth() async {
-    ble.value = await Permission.bluetooth.request();
-    validate();
+  Future<void> askForBluetooth() async {
+    try {
+      if (Platform.isIOS) {
+        // iOS has only generic bluetooth permission
+        ble.value = await Permission.bluetooth.request();
+      } else {
+        // Android 12+ needs scan/connect separately
+        bleScan.value = await Permission.bluetoothScan.request();
+        bleConnect.value = await Permission.bluetoothConnect.request();
+      }
+      validate();
+    } catch (ee) {
+      print("Error requesting bluetooth: $ee");
+    }
   }
 
-  askForBluetoothConnect() async {
-    bleConnect.value = await Permission.bluetoothConnect.request();
-    validate();
+  Future<void> askForBluetoothConnect() async {
+    if (Platform.isAndroid) {
+      bleConnect.value = await Permission.bluetoothConnect.request();
+      validate();
+    }
   }
 
-  askForBluetoothScan() async {
-    bleScan.value = await Permission.bluetoothScan.request();
-    bleConnect.value = await Permission.bluetoothConnect.request();
-    validate();
+  Future<void> askForBluetoothScan() async {
+    if (Platform.isAndroid) {
+      bleScan.value = await Permission.bluetoothScan.request();
+      bleConnect.value = await Permission.bluetoothConnect.request();
+      validate();
+    }
   }
 
-  validate() {
+  void validate() {
     if (granted()) {
       Get.back(result: true);
     }
   }
 
   bool granted() {
-    if (Platform.isAndroid)
-      return bleConnect.value == PermissionStatus.granted && bleScan.value == PermissionStatus.granted &&
-       location.value == PermissionStatus.granted;
-    else
+    if (Platform.isAndroid) {
+      return bleConnect.value == PermissionStatus.granted &&
+          bleScan.value == PermissionStatus.granted &&
+          location.value == PermissionStatus.granted;
+    } else {
       return ble.value == PermissionStatus.granted &&
           location.value == PermissionStatus.granted;
+    }
   }
 }
