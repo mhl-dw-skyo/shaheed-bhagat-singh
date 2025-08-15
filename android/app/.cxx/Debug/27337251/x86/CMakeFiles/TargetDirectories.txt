@@ -1,0 +1,2 @@
+/Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/android/app/.cxx/Debug/27337251/x86/CMakeFiles/edit_cache.dir
+/Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/android/app/.cxx/Debug/27337251/x86/CMakeFiles/rebuild_cache.dir
