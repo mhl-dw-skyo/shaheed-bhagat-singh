@@ -1956,6 +1956,77 @@
                     "wlongitude": null
                 }
             }
+        },
+        {
+            "serial_no": [
+                "100"
+            ],
+            "location_name": "शहीदी ज्योत",
+            "location_id": 81,
+            "location_detail": {
+                "module_alias": "loc_description",
+                "module_layout_id": 1,
+                "language_id": 1,
+                "module_type": 1,
+                "module_layout": 1,
+                "module_name": "स्थान का विवरण",
+                "attributes": {
+                    "location_id": 81,
+                    "location_name": "Test (Himanshu)",
+                    "description": [
+                        {
+                            "language_id": 1,
+                            "language_name": "English",
+                            "description": "Test"
+                        },
+                        {
+                            "language_id": 3,
+                            "language_name": "ਪੰਜਾਬੀ",
+                            "description": "Test"
+                        },
+                        {
+                            "language_id": 2,
+                            "language_name": "हिन्दी",
+                            "description": "Test"
+                        }
+                    ],
+                    "latitude": "",
+                    "longitude": "",
+                    "image_path": "https://bhagatsm.dwgroup.in/assets/image-not-available.jpg",
+                    "is_audio_auto_play": 0,
+                    "description2": "Test",
+                    "beacon_listing": [
+                        {
+                            "sound_type": "A",
+                            "beacon_id": "72",
+                            "is_primary": 1,
+                            "english_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745841440_71_1726812564_60_Walkthrough_new.mp3",
+                            "hindi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745841440_71_1726812564_60_Walkthrough_new.mp3",
+                            "punjabi_sound_file": "https://bhagatsm.dwgroup.in/assets/beacons/original/sounds/english/1745841440_71_1726812564_60_Walkthrough_new.mp3",
+                            "is_next_confirm": 1
+                        }
+                    ],
+                    "serial_no": [
+                        "100"
+                    ],
+                    "is_photo_content_avail": 0,
+                    "is_game_avail": 0,
+                    "is_quiz_avail": 0,
+                    "is_vr_content_avail": 0,
+                    "is_video_content_avail": 0,
+                    "is_360_content_avail": 0,
+                    "photo_icon_text": null,
+                    "photo_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=2&location_id=81&media_type=2",
+                    "video_icon_text": null,
+                    "video_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=2&location_id=81&media_type=3",
+                    "vr_icon_text": null,
+                    "vr_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=2&location_id=81&media_type=4",
+                    "video360_icon_text": null,
+                    "video360_api_url": "https://bhagatsm.dwgroup.in/api/locations/getLocation_media_details?language_id=2&location_id=81&media_type=7",
+                    "wlatitude": "",
+                    "wlongitude": ""
+                }
+            }
         }
     ]
 }

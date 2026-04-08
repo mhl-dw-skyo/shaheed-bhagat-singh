@@ -78,7 +78,7 @@ dev_dependencies:
 
 dependency_overrides:
   webview_flutter_android: ^3.14.0
-
+  package_info_plus: ^8.0.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

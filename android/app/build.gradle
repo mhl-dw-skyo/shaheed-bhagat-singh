@@ -35,7 +35,7 @@ def keystoreProperties = new Properties()
    }
 
 android {
-    compileSdkVersion 35
+    compileSdkVersion 36
     ndkVersion = "27.0.12077973"
 
     sourceSets {
@@ -44,7 +44,7 @@ android {
 
     defaultConfig {
         applicationId "bhagatsm.skyo.app"
-        minSdkVersion 23
+        minSdkVersion flutter.minSdkVersion
         targetSdkVersion 34
         versionCode 17
         versionName "1.0.1"

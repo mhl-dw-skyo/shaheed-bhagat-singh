@@ -170,10 +170,10 @@ class DashboardController extends GetxController with WidgetsBindingObserver{
       print(regionsList);
       _streamRanging =
           flutterBeacon.ranging(regionsA).listen((RangingResult result) async {
-            // print("Entered");
+             print("Entered");
             print(result);
             if (result.beacons.isNotEmpty) {
-              beaconsJsonData = result.beacons;
+              beaconsJsonData = result.beacons.where((b) => b.rssi < 0).toList();
               beaconsJsonData.sort((m1, m2) {
                 var r = m2.rssi.compareTo(m1.rssi);
                 if (r != 0) return r;
@@ -188,10 +188,11 @@ class DashboardController extends GetxController with WidgetsBindingObserver{
   }
 
   beaconExecutionAlgorithm() async {
-    // Return early if no beacons found
-    if (beaconsJsonData.isEmpty) return;
+    // Return early if no valid beacons found
+    var validBeacons = beaconsJsonData.where((b) => b.rssi < 0).toList();
+    if (validBeacons.isEmpty) return;
 
-    Beacon beaconItem = beaconsJsonData.first;
+    Beacon beaconItem = validBeacons.first;
 
     // Return if there is no beacon data to compare
     if (commonService.beaconsData.value.data.isEmpty) return;

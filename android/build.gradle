@@ -10,6 +10,24 @@ subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
 subprojects {
+    afterEvaluate { project ->
+        if (project.hasProperty('android')) {
+            project.android {
+                if (compileSdkVersion != null) {
+                    try {
+                        def sdkStr = compileSdkVersion.toString().replace("android-", "")
+                        if (sdkStr.toInteger() < 36) {
+                            compileSdkVersion 36
+                        }
+                    } catch (Exception e) {}
+                } else {
+                    compileSdkVersion 36
+                }
+            }
+        }
+    }
+}
+subprojects {
     project.evaluationDependsOn(':app')
 }
 
