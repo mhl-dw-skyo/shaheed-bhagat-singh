@@ -23,7 +23,7 @@
     <content url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sms_autofill-2.4.1/android">
       <excludeFolder url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/sms_autofill-2.4.1/android/.gradle" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 36, extension level 17 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

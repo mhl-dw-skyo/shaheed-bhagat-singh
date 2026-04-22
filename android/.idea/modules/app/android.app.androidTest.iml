@@ -26,8 +26,8 @@
             <stringArg name="destination" arg="$MODULE_DIR$/../../../../build/app/tmp/kotlin-classes/debugAndroidTest" />
             <stringArg name="jvmTarget" arg="17" />
             <stringArg name="moduleName" arg="app_debugAndroidTest" />
-            <stringArg name="apiVersion" arg="2.0" />
-            <stringArg name="languageVersion" arg="2.0" />
+            <stringArg name="apiVersion" arg="2.1" />
+            <stringArg name="languageVersion" arg="2.1" />
           </stringArguments>
           <arrayArguments>
             <arrayArg name="pluginClasspaths" />
@@ -45,30 +45,30 @@
     <content url="file://$MODULE_DIR$/../../../../build/app/generated/ap_generated_sources/debugAndroidTest/out" />
     <content url="file://$MODULE_DIR$/../../../../build/app/generated/res/resValues/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../../build/app/generated/source/buildConfig/androidTest/debug" />
-    <orderEntry type="jdk" jdkName="Android API 35, extension level 13 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 36, extension level 17 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="android.app.main" scope="TEST" />
     <orderEntry type="module" module-name="android.assets_audio_player.main" scope="TEST" />
     <orderEntry type="module" module-name="android.device_info_plus.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.firebase_core.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.firebase_dynamic_links.main" scope="TEST" />
-    <orderEntry type="module" module-name="com.amolg.flutterbarcodescanner.android.flutter_barcode_scanner.main~1" scope="TEST" />
+    <orderEntry type="module" module-name="firebase_core-3.15.2.android.firebase_core.main" scope="TEST" />
+    <orderEntry type="module" module-name="io.flutter.plugins.firebase.dynamiclinks.android.firebase_dynamic_links.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.flutter_barcode_scanner.main" scope="TEST" />
     <orderEntry type="module" module-name="android.flutter_beacon.main" scope="TEST" />
     <orderEntry type="module" module-name="android.flutter_downloader.main" scope="TEST" />
     <orderEntry type="module" module-name="android.flutter_inappwebview_android.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.flutter_plugin_android_lifecycle.main" scope="TEST" />
+    <orderEntry type="module" module-name="io.flutter.plugins.flutter_plugin_android_lifecycle.android.flutter_plugin_android_lifecycle.main" scope="TEST" />
     <orderEntry type="module" module-name="android.fluttertoast.main" scope="TEST" />
     <orderEntry type="module" module-name="android.location.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.package_info_plus.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.path_provider_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="dev.fluttercommunity.plus.packageinfo.android.package_info_plus.main" scope="TEST" />
+    <orderEntry type="module" module-name="path_provider_android-2.2.23.android.path_provider_android.main" scope="TEST" />
     <orderEntry type="module" module-name="android.permission_handler_android.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.rive_common.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.shared_preferences_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.rive_native.main" scope="TEST" />
+    <orderEntry type="module" module-name="io.flutter.plugins.sharedpreferences.android.shared_preferences_android.main" scope="TEST" />
     <orderEntry type="module" module-name="android.sign_in_with_apple.main" scope="TEST" />
     <orderEntry type="module" module-name="android.sms_autofill.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.sqflite_android.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.url_launcher_android.main" scope="TEST" />
-    <orderEntry type="module" module-name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.main~1" scope="TEST" />
+    <orderEntry type="module" module-name="com.tekartik.sqflite.android.sqflite_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="io.flutter.plugins.urllauncher.android.url_launcher_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-process:2.7.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.7.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.startup:startup-runtime:1.1.1@aar" level="project" />
@@ -135,12 +135,12 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations:17.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations-interop:17.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:23.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:armeabi_v7a_debug:1.0.0-18b71d647a292a980abb405ac7d16fe1f0b20434" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:arm64_v8a_debug:1.0.0-18b71d647a292a980abb405ac7d16fe1f0b20434" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:x86_64_debug:1.0.0-18b71d647a292a980abb405ac7d16fe1f0b20434" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-18b71d647a292a980abb405ac7d16fe1f0b20434" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:armeabi_v7a_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:arm64_v8a_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:x86_64_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.7.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-jvm:1.8.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1" level="project" />
@@ -175,8 +175,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.checkerframework:checker-qual:3.43.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.errorprone:error_prone_annotations:2.28.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.j2objc:j2objc-annotations:3.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: /Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/build/app/intermediates/flutter/debug/libs.jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: /Users/shreedevelopers/Downloads/Himanshu/softwares/Skaeo/shaheed-bhagat-singh/android/feasybeacon/feasybeacon.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: /Users/shreedevelopers/Downloads/Himanshu/shaheed-bhagat-singh/build/app/intermediates/flutter/debug/libs.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: /Users/shreedevelopers/Downloads/Himanshu/shaheed-bhagat-singh/android/feasybeacon/feasybeacon.jar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="android.app.main" />
 </module>

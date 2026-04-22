@@ -23,19 +23,19 @@
           <arrayArguments>
             <arrayArg name="pluginClasspaths">
               <args>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-sam-with-receiver-compiler-plugin-embeddable/2.0.20/984528697321e6f1a6f083b27359523823df5b03/kotlin-sam-with-receiver-compiler-plugin-embeddable-2.0.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-assignment-compiler-plugin-embeddable/2.0.20/fb01907f58e29e5784dece54a91f932a7402f486/kotlin-assignment-compiler-plugin-embeddable-2.0.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/2.0.20/46b8d2d2028448f6596cc3ce0ad7b10b259ec236/kotlin-scripting-jvm-2.0.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/2.0.20/af6097b8ac359457ec1cf9b34bd9b5313b52eb6/kotlin-scripting-common-2.0.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.0.20/7388d355f7cceb002cd387ccb7ab3850e4e0a07f/kotlin-stdlib-2.0.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.0.20/4aea042b39014e0a924c2e1d4a21b6fff7e4d35/kotlin-script-runtime-2.0.20.jar</arg>
-                <arg>$KOTLIN_BUNDLED$/lib/assignment-compiler-plugin.jar</arg>
-                <arg>$KOTLIN_BUNDLED$/lib/sam-with-receiver-compiler-plugin.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginOptions">
               <args>
-                <arg>plugin:org.jetbrains.kotlin.assignment:annotation=org.gradle.api.SupportsKotlinAssignmentOverloading</arg>
                 <arg>plugin:org.jetbrains.kotlin.samWithReceiver:annotation=org.gradle.api.HasImplicitReceiver</arg>
+                <arg>plugin:org.jetbrains.kotlin.assignment:annotation=org.gradle.api.SupportsKotlinAssignmentOverloading</arg>
               </args>
             </arrayArg>
           </arrayArguments>
@@ -44,7 +44,7 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
-    <output url="file://$USER_HOME$/Documents/flutter/packages/flutter_tools/gradle/build/classes/groovy/main" />
+    <output url="file://$USER_HOME$/Documents/flutter/packages/flutter_tools/gradle/build/classes/kotlin/main" />
     <exclude-output />
     <content url="file://$USER_HOME$/Documents/flutter/packages/flutter_tools/gradle/src/main">
       <sourceFolder url="file://$USER_HOME$/Documents/flutter/packages/flutter_tools/gradle/src/main/groovy" isTestSource="false" />
@@ -250,18 +250,53 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:gradle:8.7.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: androidx.annotation:annotation-jvm:1.9.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:gradle:8.9.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:2.0.20" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.0.20" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:builder:8.7.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:builder-model:8.7.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:gradle-api:8.7.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:manifest-merger:31.7.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android:zipflinger:8.7.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:apksig:8.7.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:apkzlib:8.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin:gradle76:1.8.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:builder:8.9.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:builder-model:8.9.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:gradle-api:8.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-api:gradle76:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-tooling-core:1.8.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:manifest-merger:31.9.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android:zipflinger:8.9.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:apksig:8.9.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:apkzlib:8.9.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.squareup:javawriter:2.5.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.ow2.asm:asm:9.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.ow2.asm:asm:9.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-native-utils:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-project-model:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.4.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-util-io:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-idea-proto:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-idea:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-util-klib:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-klib-commonizer-api:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-annotation-processing-gradle:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-compiler-runner:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-compiler-embeddable:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-build-common:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-daemon-client:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-daemon-embeddable:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.intellij.deps:trove4j:1.0.20200330" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.dev.jna:jna:5.6.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-jvm:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-common:1.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10" level="project" />
   </component>
 </module>

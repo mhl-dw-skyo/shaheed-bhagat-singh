@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-components:18.0.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/8b3a2b2bcb29b8562b2ae5e62d0086e0/transformed/jetified-firebase-components-18.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/134c829d5129f7402c6dd9bf455cc14c/transformed/jetified-firebase-components-18.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/8b3a2b2bcb29b8562b2ae5e62d0086e0/transformed/jetified-firebase-components-18.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/8b3a2b2bcb29b8562b2ae5e62d0086e0/transformed/jetified-firebase-components-18.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/134c829d5129f7402c6dd9bf455cc14c/transformed/jetified-firebase-components-18.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/134c829d5129f7402c6dd9bf455cc14c/transformed/jetified-firebase-components-18.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

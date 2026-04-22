@@ -23,7 +23,7 @@
     <content url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_downloader-1.12.0/android">
       <excludeFolder url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_downloader-1.12.0/android/.gradle" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 35, extension level 13 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 36, extension level 17 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
