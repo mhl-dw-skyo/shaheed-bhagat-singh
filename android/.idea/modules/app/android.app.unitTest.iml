@@ -45,25 +45,26 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="android.assets_audio_player.main" scope="TEST" />
     <orderEntry type="module" module-name="android.device_info_plus.main" scope="TEST" />
-    <orderEntry type="module" module-name="firebase_core-3.15.2.android.firebase_core.main" scope="TEST" />
-    <orderEntry type="module" module-name="io.flutter.plugins.firebase.dynamiclinks.android.firebase_dynamic_links.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.firebase_core.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.firebase_dynamic_links.main" scope="TEST" />
     <orderEntry type="module" module-name="android.flutter_barcode_scanner.main" scope="TEST" />
     <orderEntry type="module" module-name="android.flutter_beacon.main" scope="TEST" />
     <orderEntry type="module" module-name="android.flutter_downloader.main" scope="TEST" />
     <orderEntry type="module" module-name="android.flutter_inappwebview_android.main" scope="TEST" />
-    <orderEntry type="module" module-name="io.flutter.plugins.flutter_plugin_android_lifecycle.android.flutter_plugin_android_lifecycle.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.flutter_plugin_android_lifecycle.main" scope="TEST" />
     <orderEntry type="module" module-name="android.fluttertoast.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.jni.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.jni_flutter.main" scope="TEST" />
     <orderEntry type="module" module-name="android.location.main" scope="TEST" />
-    <orderEntry type="module" module-name="dev.fluttercommunity.plus.packageinfo.android.package_info_plus.main" scope="TEST" />
-    <orderEntry type="module" module-name="path_provider_android-2.2.23.android.path_provider_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.package_info_plus.main" scope="TEST" />
     <orderEntry type="module" module-name="android.permission_handler_android.main" scope="TEST" />
     <orderEntry type="module" module-name="android.rive_native.main" scope="TEST" />
-    <orderEntry type="module" module-name="io.flutter.plugins.sharedpreferences.android.shared_preferences_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.shared_preferences_android.main" scope="TEST" />
     <orderEntry type="module" module-name="android.sign_in_with_apple.main" scope="TEST" />
-    <orderEntry type="module" module-name="android.sms_autofill.main" scope="TEST" />
-    <orderEntry type="module" module-name="com.tekartik.sqflite.android.sqflite_android.main" scope="TEST" />
-    <orderEntry type="module" module-name="io.flutter.plugins.urllauncher.android.url_launcher_android.main" scope="TEST" />
-    <orderEntry type="module" module-name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="com.jaumard.smsautofill.android.sms_autofill.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.sqflite_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.url_launcher_android.main" scope="TEST" />
+    <orderEntry type="module" module-name="android.webview_flutter_android.main" scope="TEST" />
     <orderEntry type="module" module-name="android.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-process:2.7.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.7.0@aar" level="project" />
@@ -86,6 +87,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.window:window-java:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.window:window:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.getkeepsafe.relinker:relinker:1.4.5@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.exifinterface:exifinterface:1.4.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.media:media:1.6.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
@@ -129,14 +131,14 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations:18.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations-interop:17.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.1.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:23.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:armeabi_v7a_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:arm64_v8a_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:x86_64_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-035316565ad77281a75305515e4682e6c4c6f7ca" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:armeabi_v7a_debug:1.0.0-77e2e94772b6eb43759e34ed1ad7da4674e19cab" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:arm64_v8a_debug:1.0.0-77e2e94772b6eb43759e34ed1ad7da4674e19cab" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:x86_64_debug:1.0.0-77e2e94772b6eb43759e34ed1ad7da4674e19cab" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-77e2e94772b6eb43759e34ed1ad7da4674e19cab" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.7.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-jvm:1.9.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-jvm:1.10.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common-java8:2.7.0" level="project" />
@@ -154,7 +156,19 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-encoders:17.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-encoders-proto:16.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:guava:33.3.1-android" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:failureaccess:1.0.2" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.google.guava:failureaccess:1.0.2">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/6af01e9a4e32d59272b54cba0505922717f46bcd/failureaccess-1.0.2-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/6acdafcf2dfc3b548e59dd3a4b454552aeb6ff65/failureaccess-1.0.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: com.google.code.findbugs:jsr305:3.0.2">
         <CLASSES>
@@ -168,11 +182,34 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="TEST" name="Gradle: org.checkerframework:checker-qual:3.43.0" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: org.checkerframework:checker-qual:3.43.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.43.0/9425eee39e56b116d2b998b7c2cebcbd11a3c98b/checker-qual-3.43.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.43.0/36ad5c425eaea898ee0076dd562f97f0208bf6f8/checker-qual-3.43.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.43.0/dfd1d5ec59d04e7bd1ad44e74da445b880cfc2e1/checker-qual-3.43.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.errorprone:error_prone_annotations:2.28.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.j2objc:j2objc-annotations:3.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: /Users/shreedevelopers/Downloads/Himanshu/shaheed-bhagat-singh/build/app/intermediates/flutter/debug/libs.jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: /Users/shreedevelopers/Downloads/Himanshu/shaheed-bhagat-singh/android/feasybeacon/feasybeacon.jar" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Gradle: com.google.j2objc:j2objc-annotations:3.0.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/7399e65dd7e9ff3404f4535b2f017093bdb134c7/j2objc-annotations-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/cedb44f9be1f608ac9ebc9557455f2311ef17f18/j2objc-annotations-3.0.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/e6e870c6faf70867a723848b036607cd7d389621/j2objc-annotations-3.0.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Gradle: /Users/admin/StudioProjects/shaheed-bhagat-singh/android/feasybeacon/feasybeacon.jar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="android.app.main" />
 </module>

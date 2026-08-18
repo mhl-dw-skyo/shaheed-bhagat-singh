@@ -10,112 +10,118 @@
   </component>
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
-      <module name="android.location" />
-      <module name="android.location.unitTest" />
-      <module name="android.feasybeacon" />
-      <module name="io.flutter.plugins.firebase.dynamiclinks.android.firebase_dynamic_links" />
-      <module name="android.location.androidTest" />
-      <module name="android.flutter_inappwebview_android.main" />
-      <module name="android.location.main" />
-      <module name="android" />
-      <module name="io.flutter.plugins.urllauncher.android.url_launcher_android.main" />
-      <module name="android.permission_handler_android.main" />
-      <module name="android.flutter_beacon.unitTest" />
-      <module name="android.flutter_inappwebview_android.androidTest" />
-      <module name="android.sms_autofill" />
-      <module name="android.app.unitTest" />
-      <module name="android.flutter_beacon" />
-      <module name="android.permission_handler_android.unitTest" />
-      <module name="android.permission_handler_android" />
-      <module name="android.fluttertoast" />
-      <module name="android.device_info_plus.androidTest" />
-      <module name="dev.fluttercommunity.plus.packageinfo.android.package_info_plus" />
-      <module name="Kotlin Scripts.KotlinBuildScript...:..:..:..:.pub-cache:hosted:pub.dev:path_provider_android-2.2.23:android:build.gradle.kts" />
-      <module name="gradle.main" />
-      <module name="android.flutter_beacon.main" />
-      <module name="android.flutter_downloader.unitTest" />
-      <module name="android.flutter_inappwebview_android" />
-      <module name="android.flutter_inappwebview_android.unitTest" />
-      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android" />
-      <module name="android.rive_native" />
-      <module name="gradle.test" />
-      <module name="android.sign_in_with_apple.main" />
-      <module name="Kotlin Scripts.KotlinBuildScript...:..:..:..:.pub-cache:hosted:pub.dev:url_launcher_android-6.3.29:android:build.gradle.kts" />
-      <module name="Kotlin Scripts.KotlinBuildScript...:..:..:..:.pub-cache:hosted:pub.dev:shared_preferences_android-2.4.23:android:build.gradle.kts" />
-      <module name="Kotlin Scripts.KotlinSettingsScript...:..:..:..:Documents:flutter:packages:flutter_tools:gradle:settings.gradle.kts" />
-      <module name="android.flutter_beacon.androidTest" />
-      <module name="android.flutter_barcode_scanner" />
       <module name="android.assets_audio_player" />
-      <module name="android.permission_handler_android.androidTest" />
-      <module name="android.app.androidTest" />
+      <module name="android.rive_native.unitTest" />
+      <module name="android.jni_flutter.main" />
+      <module name="android.rive_native.androidTest" />
+      <module name="android.flutter_beacon.androidTest" />
+      <module name="android.sign_in_with_apple.unitTest" />
+      <module name="android.jni_flutter.unitTest" />
       <module name="android.app.main" />
+      <module name="android.app.androidTest" />
       <module name="android.app" />
-      <module name="android.assets_audio_player.androidTest" />
-      <module name="android.sms_autofill.unitTest" />
-      <module name="android.flutter_downloader" />
-      <module name="io.flutter.plugins.flutter_plugin_android_lifecycle.android.flutter_plugin_android_lifecycle" />
       <module name="android.flutter_downloader.main" />
-      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.androidTest" />
-      <module name="gradle" />
-      <module name="android.firebase_core" />
-      <module name="android.device_info_plus" />
-      <module name="Kotlin Scripts.KotlinBuildScript...:..:..:..:Documents:flutter:packages:flutter_tools:gradle:build.gradle.kts" />
-      <module name="android.path_provider_android" />
-      <module name="android.assets_audio_player.main" />
-      <module name="android.sms_autofill.androidTest" />
-      <module name="io.flutter.plugins.sharedpreferences.android.shared_preferences_android" />
-      <module name="com.tekartik.sqflite.android.sqflite_android" />
-      <module name="android.sign_in_with_apple" />
-      <module name="android.sms_autofill.main" />
-      <module name="Kotlin Scripts.KotlinBuildScript...:..:..:..:.pub-cache:hosted:pub.dev:flutter_plugin_android_lifecycle-2.0.34:android:build.gradle.kts" />
-      <module name="io.flutter.plugins.urllauncher.android.url_launcher_android" />
-      <module name="android.assets_audio_player.unitTest" />
-      <module name="android.device_info_plus.main" />
-      <module name="android.device_info_plus.unitTest" />
-      <module name="firebase_core-3.15.2.android.firebase_core.main" />
-      <module name="firebase_core-3.15.2.android.firebase_core.unitTest" />
-      <module name="firebase_core-3.15.2.android.firebase_core.androidTest" />
-      <module name="io.flutter.plugins.flutter_plugin_android_lifecycle.android.flutter_plugin_android_lifecycle.unitTest" />
-      <module name="dev.fluttercommunity.plus.packageinfo.android.package_info_plus.androidTest" />
-      <module name="io.flutter.plugins.flutter_plugin_android_lifecycle.android.flutter_plugin_android_lifecycle.androidTest" />
-      <module name="android.flutter_barcode_scanner.main" />
-      <module name="android.flutter_barcode_scanner.unitTest" />
+      <module name="android.app.unitTest" />
       <module name="android.flutter_barcode_scanner.androidTest" />
-      <module name="android.flutter_downloader.androidTest" />
-      <module name="io.flutter.plugins.firebase.dynamiclinks.android.firebase_dynamic_links.androidTest" />
-      <module name="dev.fluttercommunity.plus.packageinfo.android.package_info_plus.main" />
-      <module name="io.flutter.plugins.sharedpreferences.android.shared_preferences_android.androidTest" />
-      <module name="android.fluttertoast.main" />
+      <module name="android.location.main" />
+      <module name="android.jni_flutter.androidTest" />
+      <module name="android.permission_handler_android" />
+      <module name="android.rive_native" />
+      <module name="android.sign_in_with_apple" />
+      <module name="android.device_info_plus.androidTest" />
       <module name="android.fluttertoast.unitTest" />
       <module name="android.fluttertoast.androidTest" />
-      <module name="io.flutter.plugins.urllauncher.android.url_launcher_android.androidTest" />
-      <module name="io.flutter.plugins.urllauncher.android.url_launcher_android.unitTest" />
-      <module name="io.flutter.plugins.flutter_plugin_android_lifecycle.android.flutter_plugin_android_lifecycle.main" />
-      <module name="path_provider_android-2.2.23.android.path_provider_android.main" />
-      <module name="path_provider_android-2.2.23.android.path_provider_android.unitTest" />
-      <module name="path_provider_android-2.2.23.android.path_provider_android.androidTest" />
-      <module name="android.rive_native.main" />
-      <module name="android.rive_native.unitTest" />
-      <module name="android.rive_native.androidTest" />
-      <module name="com.tekartik.sqflite.android.sqflite_android.main" />
-      <module name="android.sign_in_with_apple.unitTest" />
+      <module name="android.shared_preferences_android" />
+      <module name="android.flutter_beacon" />
+      <module name="android.firebase_dynamic_links" />
+      <module name="android.flutter_beacon.main" />
+      <module name="android.url_launcher_android" />
+      <module name="android.flutter_downloader.unitTest" />
+      <module name="android.assets_audio_player.androidTest" />
+      <module name="android.flutter_plugin_android_lifecycle.main" />
+      <module name="android.device_info_plus.main" />
+      <module name="android.device_info_plus" />
+      <module name="android.feasybeacon" />
+      <module name="com.jaumard.smsautofill.android.sms_autofill" />
+      <module name="android.firebase_core.main" />
+      <module name="android.flutter_barcode_scanner.unitTest" />
+      <module name="android.flutter_beacon.unitTest" />
+      <module name="android.flutter_downloader" />
+      <module name="android.firebase_core.unitTest" />
+      <module name="android.firebase_dynamic_links.main" />
+      <module name="android.firebase_dynamic_links.unitTest" />
+      <module name="android.firebase_core.androidTest" />
+      <module name="android.assets_audio_player.main" />
+      <module name="android.webview_flutter_android" />
+      <module name="android.flutter_inappwebview_android" />
+      <module name="android.flutter_plugin_android_lifecycle" />
+      <module name="dev.flutter.plugin.gradle" />
+      <module name="android.device_info_plus.unitTest" />
+      <module name="android.flutter_downloader.androidTest" />
+      <module name="android.flutter_inappwebview_android.main" />
+      <module name="android.assets_audio_player.unitTest" />
+      <module name="android.permission_handler_android.main" />
+      <module name="android.location" />
+      <module name="android.flutter_barcode_scanner" />
+      <module name="android.package_info_plus" />
+      <module name="android.sqflite_android" />
+      <module name="android.flutter_plugin_android_lifecycle.unitTest" />
+      <module name="android.jni.main" />
+      <module name="android.jni.unitTest" />
+      <module name="android.jni.androidTest" />
+      <module name="android.jni_flutter" />
+      <module name="android" />
+      <module name="android.permission_handler_android.unitTest" />
+      <module name="android.flutter_inappwebview_android.androidTest" />
+      <module name="android.flutter_plugin_android_lifecycle.androidTest" />
+      <module name="android.firebase_dynamic_links.androidTest" />
+      <module name="android.fluttertoast.main" />
+      <module name="android.package_info_plus.main" />
+      <module name="android.package_info_plus.androidTest" />
+      <module name="android.jni" />
+      <module name="android.fluttertoast" />
+      <module name="android.location.unitTest" />
+      <module name="android.shared_preferences_android.androidTest" />
+      <module name="android.flutter_barcode_scanner.main" />
+      <module name="android.sign_in_with_apple.main" />
+      <module name="com.jaumard.smsautofill.android.sms_autofill.main" />
+      <module name="com.jaumard.smsautofill.android.sms_autofill.androidTest" />
       <module name="android.sign_in_with_apple.androidTest" />
-      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.unitTest" />
-      <module name="io.flutter.plugins.firebase.dynamiclinks.android.firebase_dynamic_links.unitTest" />
-      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter_android.main" />
-      <module name="com.tekartik.sqflite.android.sqflite_android.unitTest" />
-      <module name="com.tekartik.sqflite.android.sqflite_android.androidTest" />
-      <module name="io.flutter.plugins.firebase.dynamiclinks.android.firebase_dynamic_links.main" />
-      <module name="io.flutter.plugins.sharedpreferences.android.shared_preferences_android.unitTest" />
-      <module name="dev.fluttercommunity.plus.packageinfo.android.package_info_plus.unitTest" />
-      <module name="io.flutter.plugins.sharedpreferences.android.shared_preferences_android.main" />
+      <module name="android.shared_preferences_android.unitTest" />
+      <module name="android.shared_preferences_android.main" />
+      <module name="android.rive_native.main" />
+      <module name="com.jaumard.smsautofill.android.sms_autofill.unitTest" />
+      <module name="android.package_info_plus.unitTest" />
+      <module name="android.location.androidTest" />
+      <module name="android.permission_handler_android.androidTest" />
+      <module name="android.flutter_inappwebview_android.unitTest" />
+      <module name="android.firebase_core" />
+      <module name="android.sqflite_android.main" />
+      <module name="android.sqflite_android.unitTest" />
+      <module name="android.sqflite_android.androidTest" />
+      <module name="android.url_launcher_android.main" />
+      <module name="android.url_launcher_android.unitTest" />
+      <module name="android.url_launcher_android.androidTest" />
+      <module name="android.webview_flutter_android.main" />
+      <module name="android.webview_flutter_android.unitTest" />
+      <module name="android.webview_flutter_android.androidTest" />
+      <module name="dev.flutter.plugin.gradle.main" />
+      <module name="dev.flutter.plugin.gradle.test" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e86584-6056-4d04-bbf7-1500090f1dac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/android.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/android.app.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/data_files/beacon.json" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/data_files/beacon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +131,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/shreedevelopers/.android/avd/Pixel_8a.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=RZ8RA0SQNFF)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -186,7 +192,7 @@
     "ApkExportedModule": "android.app",
     "BundleExportedModule": "android.app",
     "ExportApk.ApkPathForandroid.app": "/Users/manishkumar/Documents/ManishWorkSpace/shaheed-bhagat-singh/android/app",
-    "ExportBundle.BundlePathForandroid.app": "/Users/shreedevelopers/Downloads/Himanshu/shaheed-bhagat-singh/android/app",
+    "ExportBundle.BundlePathForandroid.app": "/Users/admin/StudioProjects/shaheed-bhagat-singh/android/app",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -200,7 +206,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "bug/beacon-switch-issue",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/shreedevelopers/Downloads/Himanshu/shaheed-bhagat-singh/android",
+    "last_opened_file_path": "/Users/admin/StudioProjects/shaheed-bhagat-singh/android",
     "project.structure.last.edited": "SDK Location",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -340,5 +346,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

@@ -25,3 +25,11 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# Android release build artifacts
+*.aab
+*.apk
+android/app/release/
+
+# macOS
+.DS_Store
